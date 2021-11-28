@@ -11,7 +11,7 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="google" content="notranslate" />
   
-  <meta name="description" content="愿我如星君如月, 夜夜流光相皎洁。">
+  
   <meta name="author" content="夏末">
   <link rel="icon" href="/images/icons/favicon-16x16.png" type="image/png" sizes="16x16">
   <link rel="icon" href="/images/icons/favicon-32x32.png" type="image/png" sizes="32x32">
@@ -96,9 +96,9 @@
           api: ''
         },
         motto: {
-          default: '我在开了灯的床头下，想问问自己的心啊。',
+          default: '金风玉露一相逢，便胜却人间无数。',
           typing: true,
-          api: 'https://v2.jinrishici.com/one.json',
+          api: '',
           data_contents: '["data","content"]'
         },
       },
@@ -121,8 +121,8 @@
         page_black_list: ''
       },
       search: {
-        enable: false,
-        path: ''
+        enable: true,
+        path: 'search.xml'
       }
     }
   </script>
@@ -150,6 +150,8 @@
       
         <i class="iconfont iconmoono" id="color-toggle" color-toggle="light"></i>
       
+      
+        <i class="iconfont iconsearch j-navbar-search"></i>
       
     </div>
     <div class="center">归档</div>
@@ -210,35 +212,14 @@
 
 <footer class="footer">
   <div class="footer-social"><a 
-        href="tencent://message/?Menu=yes&uin=894519210 "
+        href="tencent://message/?Menu=yes&uin=278009762 "
         target="_blank"
         class="footer-social-item"
         onMouseOver="this.style.color= '#12B7F5'" 
         onMouseOut="this.style.color='#33333D'">
           <i class="iconfont  iconQQ "></i>
       </a><a 
-        href="javascript:; "
-        target="_blank"
-        class="footer-social-item"
-        onMouseOver="this.style.color= '#09BB07'" 
-        onMouseOut="this.style.color='#33333D'">
-          <i class="iconfont  iconwechat-fill "></i>
-      </a><a 
-        href="https://www.instagram.com/izhaoo/ "
-        target="_blank"
-        class="footer-social-item"
-        onMouseOver="this.style.color= '#DA2E76'" 
-        onMouseOut="this.style.color='#33333D'">
-          <i class="iconfont  iconinstagram "></i>
-      </a><a 
-        href="https://github.com/zhaoo "
-        target="_blank"
-        class="footer-social-item"
-        onMouseOver="this.style.color= '#9f7be1'" 
-        onMouseOut="this.style.color='#33333D'">
-          <i class="iconfont  icongithub-fill "></i>
-      </a><a 
-        href="mailto:izhaoo@163.com "
+        href="mailto:278009762@qq.com "
         target="_blank"
         class="footer-social-item"
         onMouseOver="this.style.color=#FF3B00" 
@@ -266,6 +247,20 @@
 <script src="/js/color-mode.js"></script>
 
   
+  
+    <div class="search">
+  <div class="search-container">
+    <div class="search-close">
+      <i class="iconfont iconbaseline-close-px"></i>
+    </div>
+    <div class="search-input-wrapper">
+      <i class="search-input-icon iconfont iconsearch"></i>
+      <input class="search-input" type="search" id="search-input" placeholder="Search..." autofocus autocomplete="off"
+        autocorrect="off" autocapitalize="off">
+    </div>
+    <div class="search-output" id="search-output"></div>
+  </div>
+</div>
   
 </body>
 
